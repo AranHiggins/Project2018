@@ -1,0 +1,23 @@
+
+/*to change the colour of the toolbar*/
+.mat-toolbar.mat-primary[_ngcontent-c3] {
+    background: #bb0e2d;
+    color: #fff;
+}
+/*set the width of the table */
+.table {
+    width: 100%;
+  }
+  .mat-toolbar.mat-primary[_ngcontent-c6] {
+    background: #bb0e2d;
+    color: #fff;
+}
+/*to change font*/
+.mat-card {
+    font-family: Roboto,"Arial",sans-serif;
+}
+/* font style Change*/
+.p {
+    font-family: "Helvetica ", Helvetica , serif;
+    font-style: oblique;
+}

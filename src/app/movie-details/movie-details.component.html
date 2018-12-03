@@ -1,0 +1,28 @@
+
+<mat-toolbar color="primary">Review List</mat-toolbar>
+<mat-accordion multi="true" *ngIf="movie.length > 0">
+  <mat-expansion-panel [expanded]="true" *ngFor="let movie of movie">
+   <!--To describe what is here-->
+      <b><p>Movie Title</p></b>
+      {{ movie.title }}
+      <!--To describe what is here-->
+
+   <b> <p>Director</p></b>
+    <p>{{ movie.content }}</p>
+       <!--To describe what is here-->
+
+    <b><p>Review Of Film</p></b>
+    <p>{{ movie.slider }}</p>
+    <mat-action-row>
+      <button mat-flat-button [routerLink]="['/edit', movie._id]" color="primary">EDIT</button> &nbsp; &nbsp;
+      <button mat-flat-button (click)="onDelete(movie._id)" color="warn">DELETE</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
+<p class="info-text mat-body-1" *ngIf="movie.length <= 0">No posts added yet!</p> 
+   <!--Youtube Link-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BHsFzDON6pA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>&nbsp;&nbsp;
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nWxOPwMd8ps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>&nbsp;&nbsp;
+   <!--Google map of cinema-->
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.458074258743!2d-9.033486684163998!3d53.2813289799655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b96c69dac0f85%3A0xa52660418681ebf5!2sEye+Cinema!5e0!3m2!1sen!2sie!4v1543592934367" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>

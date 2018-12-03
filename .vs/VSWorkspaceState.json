@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\movie",
+    "\\src\\app\\movie-create"
+  ],
+  "SelectedNode": "\\src\\app\\movie\\movie.component.css",
+  "PreviewInSolutionExplorer": false
+}

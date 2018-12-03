@@ -1,0 +1,79 @@
+
+  
+    
+  /* Down below is the width of the 1st card */
+  .example-card3 {
+    max-width: 200px;
+    position: absolute;
+    right: 1145px;
+    top: 129px;
+
+    /* Down below is the width of the 2nd card */
+  }
+  .example-card4 {
+    max-width: 200px;
+    position: absolute;
+    right: 890px;
+    top: 129px;
+
+    /* Down below is the width of the 3rd card */
+  }
+
+  .example-card5 {
+    max-width: 200px;
+    position: absolute;
+    right: 635px;
+    top: 129px;
+
+    /* Down below is the width of the 4th card */
+  }
+  
+  .example-card6 {
+    max-width: 200px;
+    position: absolute;
+    right: 380px;
+    top: 129px;
+/* Down below is the width of the 5th card */
+    
+  }
+  .example-card7 {
+    max-width: 200px;
+    position: absolute;
+    right: 125px;
+    top: 129px;
+
+    
+  }
+  
+  /* here is the link to back ground image in the card */
+  .example-header-image {
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_.jpg');
+    background-size: cover;
+  }
+  
+/* here is the link to back ground image in the card */
+  .example3-header-image {
+    background-image: url('https://images-na.ssl-images-amazon.com/images/I/A1t8xCe9jwL._SY550_.jpg');
+    background-size: cover;
+  }
+/* here is the link to back ground image in the card */
+  .example4-header-image {
+    background-image: url('https://images-na.ssl-images-amazon.com/images/I/51MtComdS4L.jpg');
+    background-size: cover;
+  }
+/* here is the link to back ground image in the card */
+  .example5-header-image {
+    background-image: url('https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg');
+    background-size: cover;
+    /* here is the link to back ground image in the card */
+  }
+  .example6-header-image {
+    background-image: url('https://imgc.allpostersimages.com/img/print/posters/pulp-fiction-cover-with-uma-thurman-movie-poster_a-G-1849047-0.jpg');
+    background-size: cover;
+    /* here is the link to back ground image in the card */
+  }
+  .example7-header-image {
+    background-image: url('https://images-na.ssl-images-amazon.com/images/I/51a3Lo80qsL.jpg');
+    background-size: cover;
+  }
+ 

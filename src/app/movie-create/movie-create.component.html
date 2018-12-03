@@ -1,0 +1,61 @@
+
+<mat-card>
+    <form (submit)="onAddmovie(movieForm)" #movieForm="ngForm">
+        <img mat-card-image src="https://agentmediafiles.files.wordpress.com/2015/03/movie-collage-2010.jpg" width="1" height="630"  >
+<!--Table-->
+      <table class="table">
+            <tr>
+              <th>Movie</th>
+              <th>Director</th>
+              <th>review</th>
+              
+            </tr>
+     <th>  <mat-form-field>
+        <textarea
+          matInput value="Movie!"
+          placeholder="Name Of Movie"
+          #message
+          type="text"
+          rows="3"
+          name="title"
+          ngModel
+          required
+          minlength="1"
+          #title="ngModel"></textarea>
+        <mat-error *ngIf="title.invalid">Please enter a post title.</mat-error>
+      </mat-form-field></th>
+    <th> <mat-form-field>
+        <textarea
+          matInput value="Director!"
+          placeholder="Name of Director"
+          #message
+          rows="3"
+          name="content"
+          ngModel
+          required
+          #content="ngModel"></textarea>
+        <mat-error *ngIf="content.invalid">Please enter a post title.</mat-error>
+      </mat-form-field></th> 
+    <th> <mat-form-field> 
+        <textarea
+        matInput value="review!"
+        placeholder="write a review"
+        #message
+          rows="3"
+          name="slider"
+          ngModel
+          required
+          #slider="ngModel"></textarea>
+        <mat-error *ngIf="slider.invalid">Please enter a post title.</mat-error>
+      </mat-form-field></th>
+    </table>
+  
+      <button mat-raised-button color="primary"
+      matBadge="3" matBadgePosition="before" matBadgeColor="accent"
+        mat-raised-button
+        color="warn"
+        type="submit">Save Post</button>
+    </form>
+  </mat-card>
+  
+  

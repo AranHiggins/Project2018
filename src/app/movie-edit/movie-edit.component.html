@@ -1,0 +1,44 @@
+<mat-card> <!--a card to hold inputs-->
+  <form (submit)="onEditmovie(movieForm)" #movieForm="ngForm">
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="title"
+        ngModel={{movie.title}}
+        required
+        #title="ngModel"
+        >
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        rows="4"
+        name="content"
+        ngModel={{movie.content}}
+        required
+        #content="ngModel">
+      </textarea>
+      <mat-error *ngIf="content.invalid">Please enter a post title.</mat-error>
+      
+    </mat-form-field>
+      <mat-form-field>
+        <textarea
+          matInput
+          rows="4"
+          name="slider"
+          ngModel={{movie.slider}}
+          required
+          #slider="ngModel">
+        </textarea>
+        
+        <mat-error *ngIf="slider.invalid">Please enter a post title.</mat-error>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="warn"
+      type="submit">Update Review</button>
+  </form>
+</mat-card>
+<form><marquee>Please  review the movie Honestly</marquee>
+<mat-spinner></mat-spinner></form>
